@@ -10,7 +10,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fda23a;
+    background-color: #dfdcd8;
     z-index: 100;
     height: 5rem;
   }
@@ -33,6 +33,16 @@ body {
     font-weight:lighter;
     margin: 10px;
     cursor: pointer;
+
+  }
+
+  .input-block{
+    padding-top:6rem;
+    margin-bottom:5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
   }
   .feature-img {
     display: flex;
@@ -42,34 +52,31 @@ body {
     align-items: flex-start;
     margin-right: 4rem;
   }
+  .email-btn{
+    width:8rem;
+    height:2rem;
+    background-color: #fda23a;
+    border-color:#fda23a;
+    border-radius:8px;
+    cursor:pointer;
+    margin:1rem;
+}
   #feature1{
     justify-content: center;
     align-items: start;
   }
+  .email{
+    width:15rem;
+    height:2rem;
+    border-radius:5px;
+    border-color:white;
+}
   
   @media (max-width: 767px) {
 
-    .email{
-        width:15rem;
-        height:2rem;
-        border-radius:5px;
-        border-color:white;
-    }
-    .email-btn{
-        width:8rem;
-        height:2rem;
-        background-color: #fda23a;
-        border-color:#fda23a;
-        border-radius:8px;
-        cursor:pointer;
-        margin:1rem;
-    }
     .input-block{
         padding-top:13rem;
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
+        margin-bottom:3rem;
     }
     #nav-bar {
       height: 12rem;
@@ -97,36 +104,43 @@ body {
     .feature-block {
       justify-content: center;
     }
-    .container-block{
-        width: 280px;
-        height: 350px;
-        display:flex;
-        justify-content: center;
-        text-align:center;
-        align-items: center;
-        border:2px solid grey;
-        font-size:20px;
-        margin:2rem;
+    .container{
         flex-direction:column;
     }
-    .container{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+   
   }
-  
+
+  section{
+    width:760px;
+  }
+  .container-block{
+    width: 280px;
+    height: 350px;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    border:2px solid grey;
+    font-size:20px;
+    margin:2rem;
+    flex-direction:column;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
   .feature-desc {
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin:20px;
+    margin:20px auto;
   }
   
   .feature-block {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
